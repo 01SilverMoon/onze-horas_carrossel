@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-home.css">
+    <title>Formulário</title>
+    <link rel="shortcut icon" href="Imagem/a11.ico" type="image/x-icon">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="menu">
+        <div class="titulo" onclick="f()">Armazém 11h00 <span class="fa fa-bars"></span>
+          <div class="seta"></div>
+        </div>
+        <div class="menu-suspenso">
+          <a href="index.html"><p>Home <span class="fa fa-home"></span></p></a>
+          <a href="contato.html"><p>Contato <span class="fa fa-envelope"></span></p></a>
+        </div>
+    </div>
+
+    <div id="form">Solicite mais informações clicando no botão abaixo:</div>
+  
+<section class="formulario">
+  <form>          
+    <label for="nome">Nome:</label>
+    <input type="text" id="cNome" size="20" maxlength="40" placeholder="Nome Completo" required="required">
+              
+    <label for= "email">E-mail:</label>
+    <input type="email" id="cMail" size="20" maxlength="40" placeholder="Digite Seu E-mail">
+              
+    <label for="tel">Telefone:</label>
+    <input type="tel" id="cTel">
+              
+    <label for="msg">Insira suas dúvidas aqui:</label>
+    <input type="msg" id="cMsg" size="20"" maxlength="1024" placeholder="Deixe aqui sua mensagem">
+              
+    <input type="submit" id="submit" onclick="Enviar()"; value="Enviar">
+  </form>
+</section>
+
+<script src="script-home.js"></script>  
+
+<footer>Projeto Descodificadas 2023-2 Trilha 2 por Verônica Cristina.</footer>
+</body>
+</html>

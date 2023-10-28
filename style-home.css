@@ -1,0 +1,211 @@
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+
+body{
+  background:rgb(150, 82, 234);
+  font-family:'Montserrat',sans-serif;
+}
+.menu{
+  width:260px;
+  position:absolute auto 0;
+  cursor:pointer;
+}
+.titulo{
+  width:100%;
+  box-sizing:border-box;
+  background:#fff;
+  padding:14px;
+  border-radius:4px;
+  position:relative;
+  box-shadow:0 0 40px -10px #000;
+  color:#505050;
+}
+span{
+  float:right;
+  font-size:18px!important;
+}
+.menu-suspenso{
+  width:100%;
+  background:#fff;
+  border-radius:4px;
+  box-shadow:0 0 40px -10px #000;
+  color:#505050;
+  margin-top:24px;
+  max-height:0;
+  overflow:hidden;
+  transition:all .5s;
+}
+.baixo{
+  max-height:200px;
+}
+.seta{
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  border-bottom:10px solid #fff;
+  position:absolute;
+  right:20px;
+  bottom:-24px;
+  display:none;
+}
+.seta.sem-seta{
+  display:block;
+}
+p{
+  padding:15px 14px;
+  margin:0;
+  transition:all .1s;
+}
+p:hover{
+  background:rgb(150, 82, 234);
+  -webkit-transform: scale(1.05);
+  color:rgba(255,255,255,0.8);
+  box-shadow:0 0 30px -10px #000;
+}
+
+.formulario {
+  border-radius: 5px;
+  background-color: #f2f2f285;
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family:'Montserrat',sans-serif;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+section {
+  border-radius: 5px;
+  background-color: #f2f2f285;
+  padding: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#submit {
+    width: 100%;
+    background-color: blueviolet;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+#submit:hover{
+    background-color: rgb(74, 7, 136);
+  }
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+  
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+  
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+  
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+  
+.flip-card-front {
+  background-color: white;
+  color: black;
+}
+  
+.flip-card-back {
+  background-color: #aa29b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+h3 {
+font-size: 14px;
+margin: 15px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: none;
+  margin: 10px;
+  padding: 20px;
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.galeria {
+  width: 640px;
+  height: 349px;
+  outline: 3px solid blueviolet;
+  background-color: #f2f2f285;
+  overflow: hidden;
+  margin-left: 400px;
+}
+
+.galeria .fotos {
+  width: 500%;
+  animation-name: animacao;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.galeria .fotos img {
+  width: 19.9%;
+}
+
+@keyframes animacao {
+  0% { margin-left: 0;}
+  20% { margin-left: 0;}
+  25% { margin-left: -100%;}
+  45% { margin-left: -100%;}
+  50% { margin-left: -200%;}
+  70% { margin-left: -200%;}
+  75% { margin-left: -300%;}
+  95% { margin-left: -300%;}
+  100% { margin-left: 0;}
+}
